@@ -1,0 +1,256 @@
+
+
+
+@media(min-width: 992px){
+.navbar {
+    max-height: 71px !important;
+}
+}
+        
+.slide__header_custom{
+    height: 221px !important;
+}
+.recentpostcontainer{
+    position: relative;
+}
+.recentpostcontainer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f0f1f2;
+    clip-path: polygon(46% 60%, 99% 0, 100% 100%, 49% 100%, 0 100%, 0 100%);
+}
+
+.blog_holder {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    border-radius: 3px;
+}
+
+.blog__header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 0 10px 10px;
+}
+
+.heading__divider::after {
+    content: "";
+    display: block;
+    width: 8em;
+    height: 3px;
+    background-color: #b1cad0;
+    margin: 5px auto;
+}
+
+
+.profile{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.profile__info {
+    margin-left: 15px;
+}
+
+.a_name,.p_date{
+    margin: 0!important;
+}
+
+.p_date{
+    color: rgba(19, 12, 12, 0.54);
+}
+.postimage-custom{
+    width: 100% !important;
+    height: 300px !important;
+}
+.post__description {
+    padding: 15px;
+    color: rgba(19, 12, 12, 0.54);
+}
+.blog__footer{
+    padding: 0 10px 10px;
+    padding: 5px 10px 3px;
+}
+.post__btn{
+    transition: 100ms ease-in-out;
+    font-size: 1.1rem;
+    color: #aea4a4;
+}
+.post__btn:hover{
+    background: #333!important;
+    color: #fff!important;
+}
+.liked {
+    color: #d2324e;
+}
+.share-wrapper {
+    display: inline-block;
+}
+.post__read {
+    float: right;
+}
+
+.off{
+    pointer-events: none;
+}
+.popular__post{
+    width: 64px;
+    height: 64px;
+}
+
+.signup__form, .login__form{
+    background-color: aliceblue;
+    padding: 2.3em;
+    border: 1px solid #f2e9dd;
+    border-radius: 6px;
+}
+.auth__bmsg {
+    color: #b7afaf;
+}
+
+#userProfile {
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%
+}
+.bg-red{
+    color: red;
+}
+.profile__link, .post__link{
+    color: #000;
+}
+
+.profile__link:hover,
+.post__link:hover{
+    color: rgb(49, 46, 46);
+    text-decoration: none;
+}
+
+/* login modal style */
+
+.login-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    width: 80%;
+    border: 1px solid #f2eaea;
+    border-radius: 6px;
+    display: none;
+}
+
+.login-modal.modal-visible {
+    display: block;
+}
+
+.login-text{
+    color: #8c8181;
+}
+
+.fa-times{
+    pointer-events: none;
+}
+
+
+
+@media(min-width: 768px){
+    .slide__header_custom{
+        height: calc(100vh - 71.0333px) !important;
+        /* height: 100vh !important; */
+    }
+    .avatar.profile {
+        margin-left: 5px;
+    }
+    .post__btn{
+        font-size: 1.1rem;
+    }
+    .login-modal {
+        width: 40%;
+    }
+}
+
+
+@media(min-width: 1000px){
+
+    .login-modal {
+        width: 30%;
+    }
+}
+
+
+/* quick raed modal style */
+
+.nicer {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 80%;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+.loader {
+    width: 40px;
+    margin: 0 auto;
+    display: block;
+}
+
+.be-custom-i {
+    float: right;
+    font-size: 20px;
+    pointer-events: initial;
+    cursor: pointer;
+}
+
+.read-quick-des {
+    margin-right: 20px;
+    line-height: 1.6;
+    font-size: 20px;
+    font-size-adjust: 0.5;
+}
+
+@media(min-width: 700px){
+    .nicer {
+        width: 70%;
+    }
+}
+
+
+@media(min-width: 992px){
+    .nicer {
+        width: 50%;
+        max-width: 500px;
+    }
+}
+
+
+
+/* collcetion page */
+
+
+.subcategories-row {
+    padding: 50px 0;
+}
+
+.subcategory-heading::after{
+    content: "";
+    display: block;
+    width: 170px;
+    height: 1.5px;
+    background-color: #000;
+    margin-top: 6px;
+}
